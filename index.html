@@ -1,0 +1,40 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3: Estado del Estudiante</title>
+</head>
+<body>
+
+    <h1>Determinación de Estado Académico</h1>
+
+    <script>
+        
+        let nombre;
+        let nota;
+        let resultado;
+
+       
+        nombre = prompt("Ingrese el nombre del estudiante:");
+        
+       
+        nota = parseFloat(prompt("Ingrese la nota final (0 - 20):"));
+
+        
+        if (nota < 0 || nota > 20) {
+            resultado = "Nota no válida";
+        } else if (nota >= 13) {
+            resultado = "Aprobado";
+        } else {
+            resultado = "Desaprobado";
+        }
+
+        
+        document.write("<h3>Resumen del Estudiante:</h3>");
+        document.write("<p><b>Nombre del estudiante:</b> " + nombre + "</p>");
+        document.write("<p><b>Nota ingresada:</b> " + nota + "</p>");
+        document.write("<p><b>Resultado:</b> " + resultado + "</p>");
+    </script>
+
+</body>
+</html>
